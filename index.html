@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=H, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link
@@ -28,18 +29,18 @@
           <h3>4:45pm</h3>
         </div>
       </div>
-      <h1>London</h1>
+      <h1 id="city"></h1>
       <div class="row" id="current-infos">
         <div class="col-6">
           <span id="current-img">☀️</span>
-          <span id="current-temperature">33</span> 
-          <span id="units">°C / F</span>
-          <p id="current-description">Clear</p>
+          <span id="temperature"></span> 
+          <span id="units">°C / <a href="#">°F</a></span>
+          <p id="description"></p>
         </div>
         <div class="col-6">
           <ul>
-            <li id="humidity">Humidity: 31%</li>
-            <li id="wind">Wind: 7mph</li>
+            <li id="humidity"></li>
+            <li id="wind"></li>
           </ul>
         </div>
       </div>

@@ -14,7 +14,6 @@ h1 {
   padding-left: 40px;
 }
 
-h3,
 h4 {
   color: #878787;
   text-align: center;
@@ -31,6 +30,14 @@ li {
   right: 55px;
   top: -25px;
 }
+#month-day,
+#week-day,
+#hour {
+  font-size: 25px;
+  color: #878787;
+  text-align: center;
+}
+
 .temperature-forecast {
   padding: 15px;
 }
@@ -38,22 +45,20 @@ li {
   padding-left: 40px;
 }
 #current-img,
-#current-temperature {
+#temperature {
   font-size: 45px;
   line-height: 9px;
 }
-#current-description {
+#description {
   font-size: 20px;
   padding-top: 10px;
+  text-transform: capitalize;
 }
 #units {
   position: relative;
   top: -15px;
 }
 
-#search-button {
-  color: #83cee0;
-}
 #end-info {
   display: block;
   margin: 10px auto;
