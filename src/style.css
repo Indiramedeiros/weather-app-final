@@ -55,7 +55,7 @@ li {
   padding-top: -5px;
   text-transform: capitalize;
 }
-#units {
+.units {
   position: relative;
   top: -15px;
 }
@@ -65,4 +65,9 @@ li {
   margin: 10px auto;
   text-align: center;
   font-size: 15px;
+}
+#current-infos .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
 }
