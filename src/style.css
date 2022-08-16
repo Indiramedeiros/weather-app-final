@@ -28,7 +28,7 @@ li {
 
   position: relative;
   right: 55px;
-  top: -25px;
+  top: 20px;
 }
 #month-day,
 #week-day,
@@ -42,8 +42,9 @@ li {
   padding: 15px;
 }
 #current-infos {
-  padding-left: 40px;
+  padding-left: 30px;
 }
+
 #current-img,
 #temperature {
   font-size: 45px;
@@ -51,7 +52,7 @@ li {
 }
 #description {
   font-size: 20px;
-  padding-top: 10px;
+  padding-top: -5px;
   text-transform: capitalize;
 }
 #units {
