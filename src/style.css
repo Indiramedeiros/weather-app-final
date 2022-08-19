@@ -17,10 +17,6 @@ h1 {
   padding-left: 40px;
 }
 
-h4 {
-  text-align: center;
-}
-
 form {
   padding-left: 40px;
 }
@@ -40,9 +36,6 @@ li {
   text-align: center;
 }
 
-.temperature-forecast {
-  padding: 15px;
-}
 #current-infos {
   padding-left: 30px;
 }
@@ -60,6 +53,17 @@ li {
 .units {
   position: relative;
   top: -15px;
+}
+
+.temperature-forecast {
+  padding: 15px;
+}
+
+.weather-forecast-day,
+.weather-forecast-icon,
+.weather-forecast-temperature {
+  text-align: center;
+  font-size: 20px;
 }
 
 #my-link {
