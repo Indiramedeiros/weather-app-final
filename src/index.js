@@ -47,6 +47,28 @@ weekDayNow.innerHTML = `${weekDay}`;
 let currentTime = document.querySelector("#hour");
 currentTime.innerHTML = `${currentHour} : ${currentMinute}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Tue", "Wed", "Thur", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col">
+        <div class="weather-forecast-day">${day}</div>
+        <div class="weather-forecast-icon">☀️</div>
+        <div class="weather-forecast-temperature">
+          <span class="max-temperarure">27°</span>/
+          <span class="min-temperature">15°</span>
+        </div>
+      </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function getWeather(response) {
   let weather = Math.round(response.data.main.temp);
   let city = response.data.name;
@@ -140,3 +162,4 @@ let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", showCelsius);
 
 search("London");
+displayForecast();
